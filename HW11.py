@@ -31,6 +31,9 @@ elif V_List[2]>V_List[0] and V_List[2]>V_List[1]:
 
 if num % 2 == 0:
     print(V_List[0],"is the even number")
-if num % 3 == 0:
+elif num % 3 == 0:
     print(V_List[1],"is the odd number")
+elif num %2==0 and num % 3 == 0:
+    print(V_List[0],"can divide by 2 and 3")
+
 

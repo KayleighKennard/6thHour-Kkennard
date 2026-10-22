@@ -16,8 +16,17 @@ admin_login=12
 #login is true, and admin is true. If they are all true, print a
 #welcome message and increase the integer variable by one. If one of them
 #is false, print an error message telling them which one they are "missing".
-if bool_wifi:True
-if bool_login:True
-if bool_admin:True
-print("welcome")
-print(12+1)
+
+if bool_wifi==True:
+    if bool_login==True:
+        if bool_admin==True:
+            print("welcome to wifi")
+            admin_login+=1
+        else:
+            print("access denied")
+    else :
+        print("login failed")
+else:
+    print("wifi disconnected")
+
+

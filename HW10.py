@@ -26,6 +26,8 @@ else:
 #6. Make an if statement that prints if variable C is even or odd.
     if c % 2 == 0:
         print(f"{c} is even")
+    elif c % 3 == 0:
+        print(f"{c} is odd")
 
 #7. Create a variable whose value is 3 + a randomly generated number between 1 and 20
 D=3+random.randint(1,20)
@@ -33,3 +35,7 @@ print(D)
 #8. Make an if statement that prints if the variable from #7 is greater than, less than, or equal to A + B + C.
 if D < a+b+c:
     print(f"{D} is greater than {a+b+c}")
+elif D > a+b+c:
+    print(f"{D} is less than {a+b+c}")
+elif D <= a+b+c:
+    print(f"{D} is equal to {a+b+c}")
