@@ -30,10 +30,13 @@ elif V_List[2]>V_List[0] and V_List[2]>V_List[1]:
 #6. Create a nested if statement that prints if num is divisible by 2, divisible by 3, both, or neither.
 
 if num % 2 == 0:
-    print(V_List[0],"is the even number")
-elif num % 3 == 0:
-    print(V_List[1],"is the odd number")
-elif num %2==0 and num % 3 == 0:
-    print(V_List[0],"can divide by 2 and 3")
-
+    if num % 3 == 0:
+        print(f"{num} is divisible by both 2 and 3")
+    else:
+        print(f"{num} is divisible by 2 but not 3")
+else:
+    if num % 3 == 0:
+        print(f"{num} is divisible by 3 but not 2")
+    else:
+        print(f"{num} is divisible by neither")
 
