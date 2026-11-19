@@ -12,11 +12,11 @@
 X=0
 while X<100:
     X=X+1
-    if X%3==0:
-        print("Fizz")
-    if X%5==0:
-        print("Buzz")
-    if X%15==0:
+    if X%3==0 and X%5==0:
         print("FizzBuzz")
+    elif X%5==0:
+        print("Buzz")
+    elif X%3==0:
+        print("Fizz")
     else:
         print(X)
