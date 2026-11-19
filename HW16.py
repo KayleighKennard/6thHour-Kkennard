@@ -11,10 +11,10 @@ a=int(input("Give me a number:"))
 b=int(input("Give me a number:"))
 c=int(input("Give me a number:"))
 #4. Add a and b together, then divide the sum by c. Print the result.
-int_sum=a+b
+int_sum=(a+b)/c
 print(int_sum)
 #5. Round the result from #3 up or down, and then determine if it is even or odd.
-print(math.ceil(int_sum))
+E=round(int_sum)
 if int_sum % 2 == 0:
     print("Even")
 else:
@@ -29,14 +29,14 @@ z_list.append(1)
 print(z_list)
 #9. Sort the list from lowest to highest and then print the 4th number in the list again.
 z_list.sort()
-print(z_list)
+print(z_list[3])
 #10. Create a while loop that starts at 1, prints i and then adds i to itself until it is greater than 100.
 i=1
 while i<=100:
     print(i)
     i+=i
 #11. Create a list containing the names of five other students in the classroom.
-names=["cody,owyn,misa,huxley,nate"]
+names=["cody","owyn","misa","huxley","nate"]
 #12. Create a for loop that individually prints out the names of each student in the list.
 for name in names:
     print(names)

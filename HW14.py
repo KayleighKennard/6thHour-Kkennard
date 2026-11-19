@@ -30,8 +30,9 @@ while num2<=30:
 #4. Create a while loop that randomly generates a number between 1 and 6, prints the result,
 #and then breaks the loop if it's a 1.
 k=random.randint(1,6)
-while k==1:
+while True:
     print(k)
+    k = random.randint(1, 6)
     if k==1:
         break
 #5. Create a while loop that asks for a number input until the user inputs the number 0.
